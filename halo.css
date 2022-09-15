@@ -1,0 +1,368 @@
+.sheet-input-textbox {
+    text-align: center;
+    font-size: 14px;
+    width: 50%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    border: 0;
+    background-color: transparent;
+    color: #eeeeee;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: solid #507d2a 2px;
+    box-sizing: border-box;
+}
+
+.sheet-input-textbox:hover {
+    transition: 0.3s box-shadow;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.sheet-input-textbox:focus {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.sheet-container {
+    position: relative;
+    width: 800px;
+    background-color: #333333;
+    color: green;
+    position: relative;
+    display: inline-block;
+    border: 4px double #507d2a;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.sheet-header {
+    padding-bottom: 10px;
+    border-bottom: 4px double #507d2a;
+}
+
+.sheet-tabs {
+    margin-top: 10px;
+    position: relative;
+    width: 800px;
+}
+.sheet-tabs::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.sheet-tabs .sheet-tab {
+    width: 800px;
+}
+.sheet-tabs .sheet-tab:nth-of-type(2) > input[type="radio"],
+.sheet-tabs .sheet-tab:nth-of-type(2) > .sheet-tab-label {
+    margin-left: 20%;
+}
+.sheet-tabs .sheet-tab:nth-of-type(3) > input[type="radio"],
+.sheet-tabs .sheet-tab:nth-of-type(3) > .sheet-tab-label {
+    margin-left: 40%;
+}
+.sheet-tabs .sheet-tab:nth-of-type(4) > input[type="radio"],
+.sheet-tabs .sheet-tab:nth-of-type(4) > .sheet-tab-label {
+    margin-left: 60%;
+}
+.sheet-tabs .sheet-tab:nth-of-type(5) > input[type="radio"],
+.sheet-tabs .sheet-tab:nth-of-type(5) > .sheet-tab-label {
+    margin-left: 80%;
+}
+.sheet-tabs .sheet-tab > input[type="radio"] {
+    height: 30px;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 20%;
+    z-index: 1;
+}
+
+.sheet-tabs .sheet-tab > input[type="radio"]:hover ~ .sheet-tab-label {
+    background: #111111;
+    color: white;
+    border-bottom-color: #507d2a;
+}
+
+.sheet-tabs .sheet-tab > .sheet-tab-label {
+    align-items: center;
+    background: #555555;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #507d2a;
+    color: white;
+    display: flex;
+    font-size: 11px;
+    font-variant: small-caps;
+    font-weight: bold;
+    height: 30px;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    width: 20%;
+    border-bottom-color: transparent;
+    border-left-color: #507d2a;
+    border-right-color: #507d2a;
+    border-top-color: #507d2a;
+}
+
+.sheet-tabs .sheet-tab > input[type="radio"]:checked ~ .sheet-tab-label {
+    background: #333333;
+    border-color: #507d2a;
+    border-bottom: 2px solid #333333;
+    color: green;
+}
+
+.sheet-tabs .sheet-tab > input[type="radio"]:checked {
+    cursor: auto;
+}
+
+.sheet-tabs .sheet-tab > input[type="radio"]:checked ~ .sheet-tab-content {
+    display: block;
+}
+
+.sheet-tabs .sheet-tab .sheet-tab-content {
+    display: none;
+    min-height: 300px;
+    padding-top: 32px;
+    width: 100%;
+    z-index: 10;
+}
+
+.sheet-content {
+    padding: 5px;
+    border: 2px solid #507d2a;
+    border-radius: 0 10px 10px 10px;
+    min-height: 300px;
+}
+
+.sheet-label {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    height: 12px;
+}
+
+.sheet-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 0px;
+    font-variant: small-caps;
+}
+
+button .sheet-rollatrrib,
+button .sheet-rollskill {
+    background: seashell;
+    color: black;
+}
+
+.sheet-attrblock {
+    background: #333333;
+    border-radius: 15px;
+    border: 1px solid #507d2a;
+    padding: 5px;
+    color: lightgrey;
+    text-align: center;
+    box-shadow: 6px 6px 3px black;
+    min-height: 50px;
+}
+
+.sheet-attrname {
+    font-weight: bold;
+    font-size: 16px;
+    width: 145px;
+    background: transparent;
+    border: 0px;
+    color: White;
+}
+
+.sheet-skillblock {
+    margin-left: 20px;
+}
+
+.sheet-top {
+    border-bottom: 2px double #507d2a;
+    display: inline-block;
+    width: 100%;
+}
+
+.sheet-blocklabel {
+    float: left;
+    font-weight: bold;
+    background: transparent;
+    border: 0px;
+    color: White;
+}
+
+.sheet-weaponblock {
+    background: #333333;
+    border-radius: 15px;
+    border: 1px solid #507d2a;
+    padding: 5px;
+    color: lightgrey;
+    min-height: 50px;
+}
+
+.sheet-weaponblock input {
+    font-size: 12px;
+    line-height: 15px;
+    height: 15px;
+}
+
+.sheet-armorblock {
+    background: #333333;
+    border-radius: 15px;
+    border: 1px solid #507d2a;
+    padding: 5px;
+    color: lightgrey;
+    min-height: 50px;
+}
+
+.sheet-armorblock input {
+    font-size: 12px;
+    line-height: 15px;
+    height: 15px;
+}
+
+.sheet-equipblock {
+    background: #333333;
+    border-radius: 15px;
+    border: 1px solid #507d2a;
+    padding: 5px;
+    color: lightgrey;
+    min-height: 50px;
+}
+
+.sheet-equipblock input {
+    font-size: 12px;
+    line-height: 15px;
+    height: 15px;
+}
+
+.sheet-dirstats {
+    width: 50px;
+    text-align: center;
+    background: transparent;
+    border: 0px;
+    color: white;
+}
+
+table.sheet-xp {
+    width: 250px;
+}
+table.sheet-xp th {
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #507d2a;
+    border-radius: 15px;
+}
+table.sheet-xp td {
+    text-align: center;
+    border: 1px solid #507d2a;
+    border-radius: 15px;
+    padding: 5px;
+    color: white;
+}
+
+.sheet-rolltemplate-basic div.sheet-template-container {
+    background: black;
+    color: white;
+    border: 2px solid #507d2a !important;
+    border-radius: 10px;
+}
+
+.sheet-rolltemplate-basic .sheet-template-header {
+    color: green;
+    padding: 2px;
+    border-bottom: 1px solid #507d2a;
+    line-height: 1.6em;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.sheet-rolltemplate-basic div {
+    padding: 5px;
+    border-bottom: 1px solid #507d2a;
+}
+
+.sheet-rolltemplate-basic .inlinerollresult {
+    display: inline-block;
+    min-width: 1.5em;
+    text-align: center;
+    border: 1px solid #507d2a;
+    border-radius: 5px;
+    background: #333333;
+}
+
+.sheet-rolltemplate-basic .inlinerollresult.fullcrit {
+    border: 1px solid #507d2a;
+    background: green;
+}
+
+.sheet-rolltemplate-basic .inlinerollresult.fullfail {
+    border: 1px solid #507d2a;
+    background: red;
+}
+
+.sheet-rolltemplate-basic .inlinerollresult.importantroll {
+    border: 1px solid #507d2a;
+    background: blue;
+}
+
+.sheet-rolltemplate-stat div.sheet-template-container {
+    background: black;
+    color: white;
+    border: 2px solid #507d2a !important;
+    border-radius: 10px;
+}
+
+.sheet-rolltemplate-stat .sheet-template-header {
+    color: green;
+    padding: 2px;
+    border-bottom: 1px solid #507d2a;
+    line-height: 1.6em;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.sheet-rolltemplate-stat div {
+    padding: 5px;
+    border-bottom: 1px solid #507d2a;
+}
+
+.sheet-rolltemplate-stat .inlinerollresult {
+    display: inline-block;
+    min-width: 1.5em;
+    text-align: center;
+    border: 1px solid #507d2a;
+    border-radius: 5px;
+    background: #333333;
+}
+
+.sheet-rolltemplate-stat .inlinerollresult.fullfail {
+    border: 1px solid #507d2a;
+    background: green;
+}
+
+.sheet-rolltemplate-stat .inlinerollresult.fullcrit {
+    border: 1px solid #507d2a;
+    background: red;
+}
+
+.sheet-rolltemplate-stat .inlinerollresult.importantroll {
+    border: 1px solid #507d2a;
+    background: blue;
+}
